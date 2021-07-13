@@ -1,0 +1,236 @@
+﻿@model ContactInfo
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="contact-bg">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="page-header-title text-center text-white">
+                    <h1 class="font-weight-light">Contact us</h1>
+                    <div>
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">Joobsy</a></li>
+                            <li class="breadcrumb-item active">Contact</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end home -->
+<!-- MAP START -->
+<section class="section background-light-blue-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.414401324136!2d49.84835781539472!3d40.37750727936966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da84181778b%3A0x29db979ecc78150c!2s28%20May%20St%2C%20Baku!5e0!3m2!1sen!2s!4v1608217661251!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MAP END -->
+<!-- CONTACT START -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class="contact-item mt-40">
+                    <div class="float-left">
+                        <div class="contact-icon mt-1 mr-4">
+                            <i class="mdi mdi-earth"></i>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <h4 class="text-dark mb-1">@Model.Website</h4>
+                        <p class="mb-0 text-muted">Brandcode Pvt.Ltd.co.in</p>
+                        <p class="mb-0 text-muted">Themescode Pvt.Ltd.co.in</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="contact-item mt-40">
+                    <div class="float-left">
+                        <div class="contact-icon mt-1 mr-4">
+                            <i class="mdi mdi-cellphone-iphone"></i>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <h4 class="text-dark mb-1">Call us</h4>
+                        <p class="mb-0 text-muted">@Model.Callus</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="contact-item mt-40">
+                    <div class="float-left">
+                        <div class="contact-icon mt-1 mr-4">
+                            <i class="mdi mdi-email"></i>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <h4 class="text-dark mb-1">Email</h4>
+                        <p class="mb-0 text-muted">@Model.Email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTACT END -->
+<!-- CONTACT FORM START -->
+<section class="section background-light-blue-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-dark font-weight-light">Get In Touch</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <div class="job-detail mt-2 p-4">
+                    <div class="custom-form">
+                        <div id="message"></div>
+                        <form name="contact-form" id="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group app-label">
+                                        <label for="name" class="text-muted">name</label>
+                                        <input id="name" class="form-control resume" placeholder="Enter Name..">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group app-label">
+                                        <label for="email" class="text-muted">Email</label>
+                                        <input type="email" id="email" class="form-control resume" placeholder="Enter Email..">
+                                        <span class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group app-label">
+                                        <label for="subject" class="text-muted">subject</label>
+                                        <input type="text" class="form-control resume" id="subject" placeholder="Subject..">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group app-label">
+                                        <label for="comments" class="text-muted">message</label>
+                                        <textarea id="messageee" rows="5" class="form-control resume" placeholder="Message.."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button id="sendBtn" class="submitBnt btn btn-custom btn-custom-new">Send Message</button>
+                                    <div id="simple-msg"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5">
+                <div class="job-detail text-center mt-2 p-4">
+                    <h4 class="text-dark font-weight-light pb-3">Contact Info</h4>
+                    <div class="contact-location mt-5 p-4">
+                        <div class="contact-location-icon">
+                            <i class="mdi mdi-map-marker"></i>
+                        </div>
+                        <p class="text-muted pt-4 f-20 mb-0">@Model.Address</p>
+                    </div>
+                    <h5 class="text-muted mt-4 mb-0">Share</h5>
+                    <ul class="blog-details-icons contact-social-icon list-inline mt-2 mb-0">
+                        <li class="list-inline-item"><a href="@Model.Facebook" class=""><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="@Model.Tweeter" class=""><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="@Model.Wahtsapp" class=""><i class="mdi mdi-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="@Model.Instagram" class=""><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="@Model.Linkedin" class=""><i class="mdi mdi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTACT FORM END -->
+<!-- subscribe start -->
+<partial name="_partialSubscribe" />
+<!-- subscribe end -->
+
+
+
+
+
+@section Scripts{
+    @*<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="../..~/wwwroot/js/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#sendBtn").click(function (e) {
+                e.preventDefault();
+                //if ($("#name").val() != "" && $("#subject").val() != "" && $("#email").val() != "" && $("#messageee").val()) {
+                if ($("#name").val() == "" || $("#subject").val() == "" || $("#email").val() == "" || $("#messageee").val() == "" ) {
+
+                    Swal.fire({
+                        title: 'please fill out the following form!',
+                        text: 'Do you want to continue',
+                        icon: 'error',
+                        confirmButtonText: 'Cool'
+                    })
+                    return false;
+                }
+
+                    let formData = new FormData();
+
+                    formData.append("Name", $("#name").val());
+                    formData.append("Subject", $("#subject").val());
+                    formData.append("Email", $("#email").val());
+                    formData.append("Message", $("#messageee").val());
+
+                    axios.post('/Contact/Create', formData)
+                        .then(function (response) {
+                            Swal.fire({
+                                position: 'top-end',
+                                icon: 'success',
+                                title: 'Your message has sended',
+                                showConfirmButton: false,
+                                timer: 2000
+                            }).then(function (result) {
+                                $("#name").val("");
+                                $("#email").val("");
+                                $("#messageee").val("");
+                                $("#subject").val("");
+                            })
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+
+                //}
+            });
+        })
+
+
+
+
+
+    </script>
+
+
+}
+
+

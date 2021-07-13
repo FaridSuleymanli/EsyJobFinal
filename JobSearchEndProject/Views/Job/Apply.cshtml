@@ -1,0 +1,454 @@
+﻿@model Apply
+@{
+    ViewData["Title"] = "Apply";
+}
+
+<section class="create-resume-bg">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="page-header-title text-center text-white">
+                    <h1 class="">Create Resume</h1>
+                    <div>
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">Joobsy</a></li>
+                            <li class="breadcrumb-item"><a href="#">Candidates</a></li>
+                            <li class="breadcrumb-item active">Create Resume</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end home -->
+
+
+
+<!-- CREATE RESUME START -->
+<section class="section background-light-blue-1">
+    <div class="container">
+        <form method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark">General Information</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-detail mt-2 p-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="resume-user  mb-5" id="div">
+                                    <i class="mdi mdi-account text-white"></i>
+                                </div>
+                                <input asp-for="Photo" type="file" accept="image/*" class="form-control" style="display:none" />
+                                <span asp-validation-for="Photo" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="custom-form">
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Firstname" class="text-muted">First Name</label>
+                                        <input asp-for="Firstname" class="form-control resume" placeholder="First Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="MiddleName" class="text-muted">Middle Name</label>
+                                        <input asp-for="MiddleName" class="form-control resume" placeholder="Middle Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Surname" class="text-muted">Surname</label>
+                                        <input asp-for="Surname" class="form-control resume" placeholder="Surname">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label for="General" class="text-muted">General</label>
+                                        <div class="form-button">
+                                            <select asp-for="General" class="nice-select" name="General">
+                                                <option data-display="General">General</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label for="marital-status" class="text-muted">Marital Status</label>
+                                        <div class="form-button">
+                                            <select asp-for="Status" class="nice-select" name="Status">
+                                                <option data-display="Status">Status</option>
+                                                <option value="Single">Single</option>
+                                                <option value="Married">Married</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label class="text-muted">Category</label>
+                                        <div class="form-button">
+                                            <select asp-for="CategoryId" asp-items="ViewBag.Category" class="nice-select">
+                                                <option data-display="Category">Category</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Facebook" class="text-muted">Facebook</label>
+                                        <input asp-for="Facebook" class="form-control resume" placeholder="Facebook">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Instagram" class="text-muted">Instagram</label>
+                                        <input asp-for="Instagram" class="form-control resume" placeholder="Instagram">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Twitter" class="text-muted">Twitter</label>
+                                        <input asp-for="Twitter" class="form-control resume" placeholder="Twitter">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Google" class="text-muted">Google</label>
+                                        <input asp-for="Google" class="form-control resume" placeholder="Google">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Date" class="text-muted">Date Of Birth</label>
+                                        <input asp-for="Date" class="form-control resume" placeholder="27-09-1997">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-12">
+                                    <div class="form-group app-label">
+                                        <label asp-for="AboutMe">AboutMe</label>
+                                        <textarea asp-for="AboutMe" rows="4" class="form-control resume" placeholder="AboutMe"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark mt-5">Contact Information</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-detail mt-2 p-4">
+                        <div class="custom-form">
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label  class="text-muted">City</label>
+                                        <div class="form-button">
+                                            <select asp-for="CityId" asp-items="ViewBag.City" class="nice-select">
+                                                <option data-display="City">City</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label for="state" class="text-muted">State</label>
+                                        <div class="form-button">
+                                            <select asp-for="StateId" asp-items="ViewBag.State" class="nice-select">
+                                                <option data-display="State">State</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label for="country" class="text-muted">Country</label>
+                                        <div class="form-button">
+                                            <select asp-for="CountryId" asp-items="ViewBag.Country" class="nice-select">
+                                                <option data-display="Country">Country</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Phone" class="text-muted">Phone</label>
+                                        <input asp-for="Phone" class="form-control resume" placeholder="Phone">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Email" class="text-muted">E-mail</label>
+                                        <input asp-for="Email" class="form-control resume" placeholder="E-mail">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Website" class="text-muted">Website</label>
+                                        <input asp-for="Website" class="form-control resume" placeholder="Website">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Address">Address</label>
+                                        <textarea asp-for="Address" rows="4" class="form-control resume" placeholder="Address"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark mt-5">Education Details</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-detail mt-2 p-4">
+                        <div class="custom-form">
+
+                            <div class="row">
+
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group app-label">
+                                        <label asp-for="StartUniversity" class="text-muted"></label>
+                                        <input asp-for="StartUniversity" class="form-control resume" placeholder="StartUniversity">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group app-label">
+                                        <label asp-for="GraduationDate" class="text-muted"></label>
+                                        <input asp-for="GraduationDate" class="form-control resume" placeholder="GraduationDate">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group app-label">
+                                        <label asp-for="UniversityName" class="text-muted">University/College</label>
+                                        <input asp-for="UniversityName" class="form-control resume" placeholder="University/College">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-lg-6">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Degree" class="text-muted">Degree</label>
+                                        <input asp-for="Degree" class="form-control resume" placeholder="Degree/Certification">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group app-label">
+                                                <label for="level" class="text-muted">Level</label>
+                                                <div class="form-button">
+                                                    <select asp-for="EducationLevelId" asp-items="ViewBag.EducationLevel" class="nice-select">
+                                                        <option data-display="Select">Select</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group app-label">
+                                                <label asp-for="CourseTitle" class="text-muted">Course Title</label>
+                                                <input asp-for="CourseTitle" class="form-control resume" placeholder="Course Title">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group app-label">
+                                        <label asp-for="EducationInformation">Addition Information</label>
+                                        <textarea asp-for="EducationInformation" rows="4" class="form-control resume" placeholder="Addition Information"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark mt-5">Work Experience</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-detail mt-2 p-4">
+                        <div class="custom-form">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group app-label">
+                                        <label asp-for="CompanyName" class="text-muted">Company Name</label>
+                                        <input asp-for="CompanyName" class="form-control resume" placeholder="Company Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group app-label">
+                                        <label asp-for="JobPosition" class="text-muted">Job Position</label>
+                                        <input asp-for="JobPosition" class="form-control resume" placeholder="Job Position">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group app-label">
+                                        <label for="location" class="text-muted">Location</label>
+                                        <div class="form-button">
+                                            <select asp-for="LocationId" asp-items="ViewBag.Location" class="nice-select">
+                                                <option data-display="Search">Search</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group app-label">
+                                                <label asp-for="StartCompanyDate" class="text-muted">Date From</label>
+                                                <input asp-for="StartCompanyDate" class="form-control resume" placeholder="28-okt-2020">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group app-label">
+                                                <label asp-for="EndCompanyDate" class="text-muted">Date To</label>
+                                                <input asp-for="EndCompanyDate" class="form-control resume" placeholder="29-okt-2020">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Salary" class="text-muted">Salary</label>
+                                        <input asp-for="Salary" class="form-control resume" placeholder="Salary">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-12">
+                                    <div class="form-group app-label">
+                                        <label asp-for="ExperienceInformation">Addition Information</label>
+                                        <textarea asp-for="ExperienceInformation" rows="4" class="form-control resume" placeholder="Addition Information"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark mt-5">Skills</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-detail mt-2 p-4">
+                        <div class="custom-form">
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group app-label">
+                                        <label asp-for="Skills" class="text-muted">Skills</label>
+                                        <input  asp-for="Skills" class="form-control resume" placeholder="HTML, CSS, PHP, javascript, ...">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <button type="submit" class="submitBnt btn btn-custom mt-5 btn-custom-new">Submit Resume</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- CREATE RESUME END -->
+
+
+
+<!-- subscribe start -->
+<partial name="_partialSubscribe" />
+<!-- subscribe end -->
