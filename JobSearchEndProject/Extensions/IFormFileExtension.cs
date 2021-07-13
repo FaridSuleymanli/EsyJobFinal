@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.Extensions
+namespace EsyJob.Extensions
 {
     public static class IFormFileExtension
     {

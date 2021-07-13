@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JobSearchEndProject.Areas.Admin.Controllers
+namespace EsyJob.Areas.Admin.Controllers
 {
     [Area("Admin")]
     //[Authorize(Roles ="Admin")]

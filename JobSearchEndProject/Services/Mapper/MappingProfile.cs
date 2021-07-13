@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using JobSearchEndProject.Models;
-using JobSearchEndProject.Services.Dto;
+using EsyJob.Models;
+using EsyJob.Services.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.Services.Mapper
+namespace EsyJob.Services.Mapper
 {
     public class MappingProfile : Profile
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace JobSearchEndProject.Migrations
+namespace EsyJob.Migrations
 {
     public partial class CreatedJobProjectDatabase : Migration
     {

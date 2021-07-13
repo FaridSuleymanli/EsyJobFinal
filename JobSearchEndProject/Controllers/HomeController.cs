@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using AutoMapper;
-using JobSearchEndProject.DAL;
-using JobSearchEndProject.Services.Dto;
-using JobSearchEndProject.ViewModels;
-using JobSearchEndProject.ViewModels.Home;
+using EsyJob.DAL;
+using EsyJob.Services.Dto;
+using EsyJob.ViewModels;
+using EsyJob.ViewModels.Home;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace JobSearchEndProject.Controllers
+namespace EsyJob.Controllers
 {
     [Authorize(Roles = "Employer,Employee,Admin")]
    

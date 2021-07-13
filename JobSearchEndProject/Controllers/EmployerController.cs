@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using JobSearchEndProject.DAL;
-using JobSearchEndProject.Extensions;
-using JobSearchEndProject.Models;
+using EsyJob.DAL;
+using EsyJob.Extensions;
+using EsyJob.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
-namespace JobSearchEndProject.Controllers
+namespace EsyJob.Controllers
 {
     public class EmployerController : Controller
     {

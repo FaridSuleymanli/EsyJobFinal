@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using JobSearchEndProject.DAL;
-using JobSearchEndProject.Models;
-using JobSearchEndProject.Services.Mapper;
+using EsyJob.DAL;
+using EsyJob.Models;
+using EsyJob.Services.Mapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -15,7 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace JobSearchEndProject
+namespace EsyJob
 {
     public class Startup
     {

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using JobSearchEndProject.DAL;
-using JobSearchEndProject.Models;
+using EsyJob.DAL;
+using EsyJob.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JobSearchEndProject.Controllers
+namespace EsyJob.Controllers
 {
     public class SubscribeController : Controller
     {

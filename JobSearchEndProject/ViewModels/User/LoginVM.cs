@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.ViewModels.User
+namespace EsyJob.ViewModels.User
 {
     public class LoginVM
     {

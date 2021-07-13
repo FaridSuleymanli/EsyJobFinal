@@ -1,4 +1,4 @@
-﻿using JobSearchEndProject.Interfaces;
+﻿using EsyJob.Interfaces;
 using MailKit.Net.Smtp;
 using MimeKit;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.Services
+namespace EsyJob.Services
 {
     public class EmailSubscribe : IEmailService
     {

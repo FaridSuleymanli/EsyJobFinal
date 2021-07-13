@@ -1,4 +1,4 @@
-﻿using JobSearchEndProject.Models;
+﻿using EsyJob.Models;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.ViewModels
+namespace EsyJob.ViewModels
 {
     public class BlogUpdateVM
     {

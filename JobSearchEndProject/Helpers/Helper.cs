@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.Helpers
+namespace EsyJob.Helpers
 {
     public class Helper
     {

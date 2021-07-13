@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using JobSearchEndProject.DAL;
-using JobSearchEndProject.Extensions;
-using JobSearchEndProject.Models;
-using JobSearchEndProject.Services;
+using EsyJob.DAL;
+using EsyJob.Extensions;
+using EsyJob.Models;
+using EsyJob.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JobSearchEndProject.Controllers
+namespace EsyJob.Controllers
 {
     [Authorize(Roles = "Admin, Employer")]
     public class PostJobController : Controller

@@ -5,11 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using JobSearchEndProject.DAL;
-using JobSearchEndProject.Extensions;
-using JobSearchEndProject.Models;
-using JobSearchEndProject.Services.Dto;
-using JobSearchEndProject.ViewModels;
+using EsyJob.DAL;
+using EsyJob.Extensions;
+using EsyJob.Models;
+using EsyJob.Services.Dto;
+using EsyJob.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -17,7 +17,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
-namespace JobSearchEndProject.Controllers
+namespace EsyJob.Controllers
 {
     public class JobController : Controller
     {

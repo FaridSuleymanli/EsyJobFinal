@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.Services.Dto
+namespace EsyJob.Services.Dto
 {
     public class JobsReturnDto
     {

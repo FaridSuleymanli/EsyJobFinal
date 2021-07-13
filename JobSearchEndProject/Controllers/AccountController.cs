@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using JobSearchEndProject.Models;
-using JobSearchEndProject.Services;
-using JobSearchEndProject.ViewModels;
-using JobSearchEndProject.ViewModels.User;
+using EsyJob.Models;
+using EsyJob.Services;
+using EsyJob.ViewModels;
+using EsyJob.ViewModels.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-namespace JobSearchEndProject.Controllers
+namespace EsyJob.Controllers
 {
     public class AccountController : Controller
     {

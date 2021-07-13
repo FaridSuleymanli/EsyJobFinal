@@ -1,12 +1,12 @@
-﻿using JobSearchEndProject.DAL;
-using JobSearchEndProject.Models;
+﻿using EsyJob.DAL;
+using EsyJob.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.ViewComponents
+namespace EsyJob.ViewComponents
 {
     public class FooterViewComponent:ViewComponent
     {

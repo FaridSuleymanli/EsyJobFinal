@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.Services
+namespace EsyJob.Services
 {
     public class EmailServices
     {

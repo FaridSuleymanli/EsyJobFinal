@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.Models
+namespace EsyJob.Models
 {
     public class EmployerCategory
     {

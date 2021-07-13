@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using JobSearchEndProject.DAL;
-using JobSearchEndProject.Extensions;
-using JobSearchEndProject.Models;
-using JobSearchEndProject.Services;
+using EsyJob.DAL;
+using EsyJob.Extensions;
+using EsyJob.Models;
+using EsyJob.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JobSearchEndProject.Areas.Admin.Controllers
+namespace EsyJob.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class HowItWorkController : Controller

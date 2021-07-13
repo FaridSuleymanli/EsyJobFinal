@@ -1,4 +1,4 @@
-﻿using JobSearchEndProject.Models;
+﻿using EsyJob.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JobSearchEndProject.DAL
+namespace EsyJob.DAL
 {
     public class AppDbContext:IdentityDbContext<AppUser>
     {
